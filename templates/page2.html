@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>職業選擇</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background-color: #e6f7ff; /* 淺藍背景，可更改 */
+      height: 100vh;
+      box-sizing: border-box;
+    }
+    h1 {
+      color: #333;
+    }
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* 每行 5 個按鈕 */
+      grid-gap: 15px;
+      justify-items: center;
+      width: 100%;
+      max-width: 1000px;
+      margin: 20px;
+    }
+    .interest-button {
+      padding: 15px 30px;
+      font-size: 16px;
+      color: white;
+      background-color: #007bff; /* 藍色背景 */
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: transform 0.2s ease, background-color 0.3s ease;
+      width: 150px;
+      height: 50px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .interest-button:hover {
+      background-color: #0056b3; /* 懸停時深藍色 */
+      transform: scale(1.05);
+    }
+    .submit-btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #FFD700;
+      border: none;
+      border-radius: 25px;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+    .submit-btn:hover {
+      background-color: #fbbd38;
+    }
+  </style>
+</head>
+<body>
+  <h1>選擇您感興趣的職業</h1>
+  <div class="button-grid">
+    <button class="interest-button">教師</button>
+    <button class="interest-button">工程師</button>
+    <button class="interest-button">設計師</button>
+    <button class="interest-button">律師</button>
+    <button class="interest-button">醫生</button>
+    <button class="interest-button">廚師</button>
+    <button class="interest-button">護理師</button>
+    <button class="interest-button">程式開發員</button>
+    <button class="interest-button">建築師</button>
+    <button class="interest-button">心理學家</button>
+    <!-- 可繼續添加其他職業 -->
+  </div>
+  <button class="submit-btn" onclick="submitSelection()">提交</button>
+
+  <script>
+    function submitSelection() {
+      alert("您的選擇已提交！");
+      // 可添加跳轉或數據處理邏輯
+      window.location.href = "page3.html";
+    }
+  </script>
+</body>
+</html>

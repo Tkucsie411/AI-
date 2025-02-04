@@ -1,0 +1,116 @@
+/* 設定 body 元素的樣式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 設定 header 的樣式 */
+header {
+    background-color: #ADD8E6; /* 淺藍色 */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.logo {
+    height: 50px;
+}
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        margin-left: 20px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+    /* 設定 main 內容區域的樣式 */
+    main {
+        padding: 20px;
+    }
+    
+    /* 設定新聞區域的樣式 */
+    .news {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    .news-item {
+        background-color: #f2f2f2;
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    /* 設定聯絡資訊區域的樣式 */
+    .info {
+        display: flex;
+        justify-content: space-between;
+        background-color: #e6e6fa; /* 淺紫色 */
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .info-item {
+        background-color: #f8f8ff;
+        border: 1px solid #d6a157;
+        padding: 10px;
+        margin: 10px;
+        flex: 1 1 23%;
+        box-sizing: border-box;
+    }
+    .info-item h3 {
+        margin-bottom: 10px;
+    }
+    
+    .info-item p {
+        margin: 5px 0;
+    }
+    
+    .map-container {
+        width: 100%; /* 設定容器寬度 */
+        max-width: 300px; /* 最大寬度 */
+        overflow: hidden; /* 隱藏超出部分 */
+    }
+    
+    .map-image {
+        width: 100%; /* 圖片寬度100%，自適應容器寬度 */
+        height: auto; /* 自動調整高度 */
+        display: block; /* 讓圖片置中 */
+    }
+    
+    /* 設定地圖的樣式 */
+    #map {
+        width: 100%;
+        height: 200px;
+        background-color: #ddd;
+    }
+    /* 設定影片區域的樣式 */
+.video-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.video-section h2 {
+    margin-bottom: 10px;
+}
+    footer {
+        background-color: #fffacd; /* 淡黃色 */
+        color: black;
+        text-align: center;
+        padding: 10px 0;
+    }

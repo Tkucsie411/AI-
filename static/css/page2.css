@@ -1,0 +1,101 @@
+/* 設定 body 元素的樣式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 設定 header 的樣式 */
+header {
+    background-color: #d6a157; /* 淺藍色 */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.logo {
+    height: 50px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 設定 main 內容區域的樣式 */
+main {
+    padding: 20px;
+}
+/* 簡介區域的樣式 */
+.introduction {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f8ff;
+    border: 1px solid #ff6347;
+    text-align: center;
+}
+
+.introduction h2 {
+    margin-bottom: 10px;
+}
+
+.introduction p {
+    margin-bottom: 10px;
+}
+
+.destination {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    gap: 20px; /* 间距 */
+}
+
+.destination-item {
+    flex: 0 0 300px; /* 固定宽度 */
+    background-color: #f2f2f2; /* 默认背景色 */
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center; /* 文字置中 */
+}
+
+.destination-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.destination-item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.destination-image {
+    width: 100%; /* 图片宽度100% */
+    height: auto; /* 自动调整高度 */
+    display: block; /* 图片置中显示 */
+    margin-bottom: 10px; /* 图片与文字之间的间距 */
+}
+
+footer {
+    background-color: #fffacd; /* 淡黄色 */
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+

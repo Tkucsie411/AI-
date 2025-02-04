@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>興趣選擇</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background-color: #f5f5f5; /* 淺灰背景 */
+      height: 100vh;
+      box-sizing: border-box;
+    }
+    h1 {
+      color: #333;
+    }
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* 每行 5 個按鈕 */
+      grid-gap: 15px;
+      justify-items: center;
+      width: 100%;
+      max-width: 1000px;
+      margin: 20px;
+    }
+    .interest-button {
+      padding: 15px 30px;
+      font-size: 16px;
+      color: white;
+      background-color: #87CEFA; /* 淺藍色背景 */
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: transform 0.2s ease, background-color 0.3s ease;
+      width: 150px;
+      height: 50px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .interest-button:hover {
+      background-color: #0056b3; /* 懸停時深藍色 */
+      transform: scale(1.05);
+    }
+    .interest-button.selected {
+      background-color: #0056b3; /* 深藍色表示選中 */
+      color: #fff;
+    }
+    .submit-btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #FFD700;
+      border: none;
+      border-radius: 25px;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+    .submit-btn:hover {
+      background-color: #fbbd38;
+    }
+  </style>
+</head>
+<body>
+  <h1>選擇您的興趣</h1>
+  <div class="button-grid">
+    <button class="interest-button" onclick="toggleSelection(this)">音樂</button>
+    <button class="interest-button" onclick="toggleSelection(this)">藝術</button>
+    <button class="interest-button" onclick="toggleSelection(this)">運動</button>
+    <button class="interest-button" onclick="toggleSelection(this)">編程</button>
+    <button class="interest-button" onclick="toggleSelection(this)">旅行</button>
+    <button class="interest-button" onclick="toggleSelection(this)">寫作</button>
+    <button class="interest-button" onclick="toggleSelection(this)">設計</button>
+    <button class="interest-button" onclick="toggleSelection(this)">烹飪</button>
+    <button class="interest-button" onclick="toggleSelection(this)">攝影</button>
+    <button class="interest-button" onclick="toggleSelection(this)">機械</button>
+    <!-- 可繼續添加其他興趣 -->
+  </div>
+  <button class="submit-btn" onclick="goToPage2()">提交</button>
+
+  
+  <script src="{{url_for('static', filename='js/page1.js')}}"></script>
+</body>
+</html>

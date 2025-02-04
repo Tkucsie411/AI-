@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("image/oatmeal_background_with_yellow_blue_dots.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+
+.start-button {
+  padding: 20px 40px;
+  font-size: 24px;
+  color: white;
+  background-color: #87CEFA; /* 淺藍色按鈕 */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.start-button:hover {
+  transform: scale(1.1);
+  background-color: #4682B4; /* 鼠標懸停變深藍 */
+}

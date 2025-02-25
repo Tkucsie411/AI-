@@ -49,6 +49,10 @@
       background-color: #0056b3; /* 懸停時深藍色 */
       transform: scale(1.05);
     }
+    .interest-button.selected {
+      background-color: #0056b3; /* 深藍色表示選中 */
+      color: #fff;
+    }
     .submit-btn {
       padding: 15px 30px;
       font-size: 18px;
@@ -63,31 +67,52 @@
     .submit-btn:hover {
       background-color: #fbbd38;
     }
+    
+    /* 設定返回按鈕樣式 */
+    .back-btn {
+        padding: 15px 30px;
+      font-size: 18px;
+      background-color: #FFD700;
+      border: none;
+      border-radius: 25px;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+
+    }
+    
+    .back-btn:hover {
+        background-color: #fbbd38; /* 懸停時顯示不同顏色 */
+    }
+    
+    /* 可根據需要調整位置 */
+    header .back-btn {
+        margin-left: 30px; /* 設定與其他元素的間距 */
+    }
+    
+
   </style>
 </head>
 <body>
   <h1>選擇您感興趣的職業</h1>
   <div class="button-grid">
-    <button class="interest-button">教師</button>
-    <button class="interest-button">工程師</button>
-    <button class="interest-button">設計師</button>
-    <button class="interest-button">律師</button>
-    <button class="interest-button">醫生</button>
-    <button class="interest-button">廚師</button>
-    <button class="interest-button">護理師</button>
-    <button class="interest-button">程式開發員</button>
-    <button class="interest-button">建築師</button>
-    <button class="interest-button">心理學家</button>
+    <button class="interest-button" onclick="toggleSelection(this)">教師</button>
+    <button class="interest-button" onclick="toggleSelection(this)">工程師</button>
+    <button class="interest-button" onclick="toggleSelection(this)">設計師</button>
+    <button class="interest-button" onclick="toggleSelection(this)">律師</button>
+    <button class="interest-button" onclick="toggleSelection(this)">醫生</button>
+    <button class="interest-button" onclick="toggleSelection(this)">廚師</button>
+    <button class="interest-button" onclick="toggleSelection(this)">護理師</button>
+    <button class="interest-button" onclick="toggleSelection(this)">程式開發員</button>
+    <button class="interest-button" onclick="toggleSelection(this)">建築師</button>
+    <button class="interest-button" onclick="toggleSelection(this)">心理學家</button>
     <!-- 可繼續添加其他職業 -->
   </div>
-  <button class="submit-btn" onclick="submitSelection()">提交</button>
-
-  <script>
-    function submitSelection() {
-      alert("您的選擇已提交！");
-      // 可添加跳轉或數據處理邏輯
-      window.location.href = "page3.html";
-    }
-  </script>
+  <div class="button-container">
+       <button class="submit-btn back-btn" onclick="goBack()">返回</button> <!-- 返回按鈕放在前面 -->
+       <button class="submit-btn" onclick="goToPage3()">提交</button> <!-- 提交按鈕放在後面 -->
+  </div>
+  <script src="{{url_for('static', filename = 'js/page2.js')}}"></script>
 </body>
 </html>

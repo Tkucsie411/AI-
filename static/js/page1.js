@@ -11,6 +11,9 @@ function toggleSelection(button) {
     selectedCount++; // 增加選中數
   }
 }
+function goBack() {
+  window.history.back(); // 返回上一頁
+}
 
 // 跳轉到 page2
 function goToPage2() {

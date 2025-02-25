@@ -67,6 +67,31 @@
     .submit-btn:hover {
       background-color: #fbbd38;
     }
+    
+    
+    /* 設定返回按鈕樣式 */
+    .back-btn {
+        padding: 15px 30px;
+      font-size: 18px;
+      background-color: #FFD700;
+      border: none;
+      border-radius: 25px;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+
+    }
+    
+    .back-btn:hover {
+        background-color: #fbbd38; /* 懸停時顯示不同顏色 */
+    }
+    
+    /* 可根據需要調整位置 */
+    header .back-btn {
+        margin-left: 30px; /* 設定與其他元素的間距 */
+    }
+
   </style>
 </head>
 <body>
@@ -84,9 +109,12 @@
     <button class="interest-button" onclick="toggleSelection(this)">機械</button>
     <!-- 可繼續添加其他興趣 -->
   </div>
-  <button class="submit-btn" onclick="goToPage2()">提交</button>
+  <div class="button-container">
+       <button class="submit-btn back-btn" onclick="goBack()">返回</button> <!-- 返回按鈕放在前面 -->
+       <button class="submit-btn" onclick="goToPage2()">提交</button> <!-- 提交按鈕放在後面 -->
+  </div>
 
   
-  <script src="{{url_for('static', filename='js/page1.js')}}"></script>
+  <script src="{{url_for('static', filename = 'js/page1.js')}}"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@ from llama_index.vector_stores.chroma import ChromaVectorStore
 from llama_index.core import Document, VectorStoreIndex, StorageContext, SimpleDirectoryReader
 
 #設定 OpenAI API
-os.environ["OPENAI_API_KEY"] = "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"  # 🔹記得替換你的 API Key
+os.environ["OPENAI_API_KEY"] = "openai gpt api key(go at the open ai website to ge the api key)"  # 🔹記得替換你的 API Key
 
 #設定 OpenAI LLM 和嵌入模型
 llm = OpenAI(model="gpt-4")  # 使用 GPT-4

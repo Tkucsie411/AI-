@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 課程推薦對話</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/chat.css') }}">
+</head>
+<body>
+  <h1>生成式 AI 課程推薦對話</h1>
+  <div id="chat-box" class="chat-box"></div>
+  <div class="input-area">
+    <input type="text" id="user-input" placeholder="請輸入你的職涯目標或興趣...">
+    <button id="send-btn">送出</button>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>
+
